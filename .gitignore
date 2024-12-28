@@ -1,20 +1,21 @@
 # Ignore node_modules and build directories in both frontend and backend
-frontend/node_modules/
-frontend/build/
-frontend/.pnp
-frontend/.pnp.js
-frontend/coverage/
+/frontend/node_modules
+/frontend/build
+/frontend/.pnp
+/frontend/.pnp.js
+/frontend/coverage
 
-backend/node_modules/
-backend/.env
-backend/.env.local
-backend/.env.development.local
-backend/.env.test.local
-backend/.env.production.local
-backend/npm-debug.log*
-backend/yarn-debug.log*
-backend/yarn-error.log*
+/backend/node_modules
+/backend/.env
+/backend/.env.local
+/backend/.env.development.local
+/backend/.env.test.local
+/backend/.env.production.local
+/backend/npm-debug.log*
+/backend/yarn-debug.log*
+/backend/yarn-error.log*
 /node_modules
+
 
 # Ignore IDE and OS-specific files
 .DS_Store
