@@ -1,19 +1,19 @@
 # Ignore node_modules and build directories in both frontend and backend
-/frontend/node_modules/
-/frontend/build/
-/frontend/.pnp
-/frontend/.pnp.js
-/frontend/coverage/
+/frontand/node_modules/
+/frontand/build/
+/frontand/.pnp
+/frontand/.pnp.js
+/frontand/coverage/
 
-/backend/node_modules/
-/backend/.env
-/backend/.env.local
-/backend/.env.development.local
-/backend/.env.test.local
-/backend/.env.production.local
-/backend/npm-debug.log*
-/backend/yarn-debug.log*
-/backend/yarn-error.log*
+/backand/node_modules/
+/backand/.env
+/backand/.env.local
+/backand/.env.development.local
+/backand/.env.test.local
+/backand/.env.production.local
+/backand/npm-debug.log*
+/backand/yarn-debug.log*
+/backand/yarn-error.log*
 /node_modules/
 
 

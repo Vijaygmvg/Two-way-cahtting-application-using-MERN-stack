@@ -1,0 +1,197 @@
+/* General container styles */
+.create-chat-container {
+  width: 100%;
+  max-width: 1125px; /* Increased width by one-fourth */
+  margin: 0 auto;
+  padding: 40px; /* Increased padding */
+  background-color: #f9f9f9;
+  border-radius: 15px; /* Slightly more rounded edges */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Chat Mode Toggle Styles */
+.chat-mode-toggle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px; /* Increased space between buttons */
+}
+
+.chat-mode-toggle button {
+  padding: 18px 30px; /* Increased padding */
+  font-size: 20px; /* Larger font size */
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.chat-mode-toggle button.active {
+  background-color: #0078d4;
+  color: white;
+}
+
+.chat-mode-toggle button:hover {
+  background-color: #0078d4;
+  color: white;
+  border: 1px solid #0078d4;
+}
+
+/* Group Information Section */
+.group-info {
+  margin-bottom: 30px;
+}
+
+.group-name-input {
+  width: 100%;
+  padding: 20px; /* Increased padding */
+  font-size: 20px; /* Larger font size */
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  margin-bottom: 30px; /* Increased space below */
+  box-sizing: border-box;
+}
+
+.group-pic-input {
+  position: relative;
+  margin-bottom: 25px; /* Increased margin */
+}
+
+.group-pic-upload {
+  width: 100%;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.group-pic-preview {
+  width: 140px; /* Increased preview size */
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+/* User List Styles */
+.user-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-item {
+  display: flex;
+  align-items: center;
+  padding: 20px; /* Increased padding */
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  transition: background-color 0.3s ease;
+  font-size: 18px; /* Larger font size */
+}
+
+.user-item:hover {
+  background-color: #f7f7f7;
+}
+
+.user-item.selected {
+  background-color: #e0f7fa;
+}
+
+/* User Image (Profile Picture) Styling */
+.user-pic {
+  width: 60px; /* Bigger profile picture */
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 25px; /* More space between image and text */
+  object-fit: cover;
+}
+
+/* Checkmark Styling */
+.checkmark {
+  position: absolute;
+  right: 20px;
+  font-size: 28px; /* Bigger checkmark */
+  color: #0078d4;
+  font-weight: bold;
+}
+
+/* Button Styling */
+.create-chat-button {
+  width: 100%;
+  padding: 20px; /* Bigger padding */
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 20px; /* Larger font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-chat-button:hover {
+  background-color: #005bb5;
+}
+
+/* Search bar styling */
+.search-bar input {
+  width: 100%;
+  padding: 18px 20px; /* Bigger padding */
+  font-size: 18px; /* Larger font size */
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  margin-bottom: 30px; /* Increased margin */
+  box-sizing: border-box;
+}
+
+/* Loading Spinner Styling */
+.user-list .loading {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .create-chat-container {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .chat-mode-toggle button {
+    padding: 14px 24px; /* Adjusted for mobile */
+    font-size: 18px;
+  }
+
+  .group-name-input, .group-pic-upload {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+
+  .user-item {
+    padding: 15px; /* Less padding for smaller screens */
+    font-size: 18px; /* Adjusted font size */
+  }
+
+  .user-pic {
+    width: 50px; /* Smaller profile pictures on mobile */
+    height: 50px;
+  }
+
+  .checkmark {
+    font-size: 26px; /* Smaller checkmark on mobile */
+  }
+
+  .create-chat-button {
+    padding: 18px; /* Less padding for smaller screens */
+    font-size: 18px; /* Slightly smaller button text */
+  }
+
+  .search-bar input {
+    padding: 15px 18px; /* Smaller padding */
+    font-size: 16px;
+  }
+}

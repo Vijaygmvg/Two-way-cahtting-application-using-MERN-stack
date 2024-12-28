@@ -1,0 +1,163 @@
+/* ProfileCard.css */
+
+/* Center the profile card on the screen */
+.profile-card {
+    width: 90%;
+    max-width: 350px;  /* Set a max width for the profile card */
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    font-family: Arial, sans-serif;
+    margin: 20px auto;  /* Center horizontally with auto margin */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Profile header styles */
+  .profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .profile-header h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .cancel-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .profile-info {
+    margin: 20px 0;
+  }
+  
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .email {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .profile-footer {
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .logout-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff4c4c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .logout-btn:hover {
+    background-color: #ff1c1c;
+  }
+  
+  /* Responsiveness - Mobile first approach */
+  
+  /* For small screens (mobile devices) */
+  @media (max-width: 480px) {
+    .profile-card {
+      width: 90%;
+      max-width: 320px;
+      padding: 15px;
+    }
+  
+    .profile-pic {
+      width: 70px;
+      height: 70px;
+    }
+  
+    .name {
+      font-size: 18px;
+    }
+  
+    .email {
+      font-size: 12px;
+    }
+  
+    .logout-btn {
+      font-size: 14px;
+    }
+  }
+  
+  /* For medium screens (tablets and small laptops) */
+  @media (max-width: 768px) {
+    .profile-card {
+      width: 80%;
+      max-width: 380px;
+      padding: 18px;
+    }
+  
+    .profile-pic {
+      width: 75px;
+      height: 75px;
+    }
+  
+    .name {
+      font-size: 19px;
+    }
+  
+    .email {
+      font-size: 13px;
+    }
+  
+    .logout-btn {
+      font-size: 15px;
+    }
+  }
+  
+  /* For large screens (desktops) */
+  @media (min-width: 1024px) {
+    .profile-card {
+      width: 350px;
+      padding: 20px;
+    }
+  
+    .profile-pic {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .name {
+      font-size: 20px;
+    }
+  
+    .email {
+      font-size: 14px;
+    }
+  
+    .logout-btn {
+      font-size: 16px;
+    }
+  }
+  

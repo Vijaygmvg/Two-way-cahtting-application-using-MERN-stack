@@ -1,0 +1,71 @@
+/* Default styles for the button to toggle the sidebar */
+.toggle-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .toggle-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* The side drawer styles */
+  .side-drawer {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Start hidden off-screen */
+    width: 250px;
+    height: 100%;
+    background-color: #111;
+    color: white;
+    transition: all 0.3s ease;
+    z-index: 999;
+    padding-top: 60px;
+  }
+  
+  .side-drawer.open {
+    left: 0; /* Slide in from the left */
+  }
+  
+  .side-drawer .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+  
+  .side-drawer ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .side-drawer ul li {
+    padding: 8px 16px;
+    text-align: left;
+  }
+  
+  .side-drawer ul li:hover {
+    background-color: #ddd;
+  }
+  
+  /* Main content style */
+  .main-content {
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+  }
+  
+  .main-content.shifted {
+    margin-left: 250px; /* Shift the content to the right when the drawer is open */
+  }
+  

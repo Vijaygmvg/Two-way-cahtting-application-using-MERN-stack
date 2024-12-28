@@ -1,0 +1,255 @@
+/* Basic styles for the container */
+.group-management-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Group name section */
+  .group-name-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .group-name-container h3 {
+    font-size: 1.5rem;
+    color: #555;
+    flex: 1;
+  }
+  
+  .group-name-input {
+    padding: 8px 12px;
+    font-size: 1rem;
+    width: 200px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .save-name-btn,
+  .edit-name-btn {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .save-name-btn:hover,
+  .edit-name-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .save-name-btn {
+    margin-left: 10px;
+  }
+  
+  .edit-name-btn {
+    margin-left: 10px;
+  }
+  
+  /* Group Members List */
+  .group-members {
+    margin-bottom: 30px;
+  }
+  
+  .group-members h3 {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .group-member {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .group-member .user-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .group-member .member-info {
+    flex: 1;
+    margin-left: 10px;
+  }
+  
+  .remove-btn {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .remove-btn:hover {
+    background-color: #e53935;
+  }
+  
+  /* Search Section */
+  .search-users {
+    margin-top: 30px;
+    position: relative;
+  }
+  
+  .search-users input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .search-users ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .search-result-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-user-info .user-pic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .search-result-item p {
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .add-btn {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .loading {
+    font-size: 1rem;
+    color: #777;
+    text-align: center;
+  }
+  
+  /* Responsive Styles */
+  
+  /* For Tablets */
+  @media (max-width: 768px) {
+    .group-management-container {
+      padding: 15px;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    .group-name-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .group-name-input {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .group-members .group-member {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .remove-btn {
+      margin-top: 10px;
+    }
+  
+    .search-users input {
+      max-width: 100%;
+    }
+  }
+  
+  /* For Mobile Devices */
+  @media (max-width: 480px) {
+    .group-management-container {
+      padding: 10px;
+    }
+  
+    h2 {
+      font-size: 1.25rem;
+    }
+  
+    .group-name-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .group-name-input {
+      width: 100%;
+    }
+  
+    .group-members .group-member {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .remove-btn {
+      margin-top: 10px;
+    }
+  
+    .search-users input {
+      max-width: 100%;
+    }
+  
+    .search-result-item {
+      flex-direction: column;
+    }
+  }
+  
